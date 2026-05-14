@@ -186,4 +186,10 @@ When packaged, the app stores user settings and favorites in:
 %APPDATA%/Airfoil Converter/
 ```
 
-The bundled app includes `Airfoil_DATA`, `NACA 4 digit`, and `xfoil.exe`.
+The bundled app includes `Airfoil_DATA` and `NACA 4 digit`.
+
+XFOIL is not bundled. To enable polar analysis, download XFOIL separately and choose it in:
+
+```text
+Actions -> Choose XFOIL executable...
+```

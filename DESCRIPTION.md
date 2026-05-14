@@ -16,6 +16,7 @@ Airfoil Converter V6.2 adds a more complete wing-design workflow:
 - resizable sidebar and station list
 - 3D preview with zoom and view controls
 - XFOIL polar computation and scoring
+- user-selected XFOIL executable, not redistributed in this repo
 - airfoil geometry analysis and cleanup
 - OBJ/STL wing mesh export
 - standalone Windows build support

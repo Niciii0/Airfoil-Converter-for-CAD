@@ -2,7 +2,7 @@
 
 A Windows desktop tool for browsing airfoil coordinate files, building wing station layouts, transforming airfoil sections in 3D, running XFOIL polar analysis, and exporting geometry for CAD or simulation workflows.
 
-The app is built with Python, Tkinter, NumPy, Matplotlib, and XFOIL. It includes a local airfoil coordinate database and can also download the UIUC airfoil database.
+The app is built with Python, Tkinter, NumPy, and Matplotlib. It can use XFOIL for polar analysis when the user provides an XFOIL executable. It includes a local airfoil coordinate database and can also download the UIUC airfoil database.
 
 ## Features
 
@@ -74,9 +74,10 @@ The app bundles:
 
 - `Airfoil_DATA/`
 - `NACA 4 digit/`
-- `xfoil.exe`
 - Tcl/Tk runtime files
 - Python libraries required by the app
+
+XFOIL is not bundled in this repository. Download XFOIL separately and choose the executable in the app via `Actions` -> `Choose XFOIL executable...`.
 
 ## Project Structure
 
@@ -87,7 +88,6 @@ build_v6_2.ps1                 Build helper script
 pyi_tk_runtime.py              Runtime hook for bundled Tcl/Tk
 Airfoil_DATA/                  Airfoil coordinate database
 NACA 4 digit/                  Additional NACA coordinate files
-xfoil.exe                      Bundled XFOIL executable
 exports/                       Default source-mode export folder
 dist/                          Built standalone app output
 build/                         PyInstaller temporary build output
@@ -96,6 +96,7 @@ build/                         PyInstaller temporary build output
 ## Notes
 
 - User settings and favorites are stored in AppData when running the standalone app.
+- XFOIL is GPL software and is not included in this repository. To use polar analysis, download XFOIL from the official source and select `xfoil.exe` in the app.
 - XFOIL can fail for difficult geometries or aggressive alpha ranges. V6.2 retries with safer sweep settings, but some airfoils may still need smaller alpha ranges.
 - OBJ/STL mesh export connects station curves into a triangulated surface. For best results, use ordered stations and similar point counts.
 
