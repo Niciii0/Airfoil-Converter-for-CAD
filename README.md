@@ -77,8 +77,7 @@ dist/Airfoil Converter V6.2/
 
 The app bundles:
 
-- `Airfoil_DATA/`
-- `NACA 4 digit/`
+The repository includes `Airfoil_DATA.zip`. Extract it to `Airfoil_DATA/` before running from source.
 - Tcl/Tk runtime files
 - Python libraries required by the app
 
@@ -107,4 +106,4 @@ build/                         PyInstaller temporary build output
 
 ## License
 
-Add your chosen license here before publishing publicly. If you are unsure, MIT is a simple option for open-source tools.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
