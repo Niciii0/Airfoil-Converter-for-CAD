@@ -78,6 +78,9 @@ dist/Airfoil Converter V6.2/
 The app bundles:
 
 The repository includes `Airfoil_DATA.zip`. Extract it to `Airfoil_DATA/` before running from source.
+
+The standalone app bundles:
+
 - Tcl/Tk runtime files
 - Python libraries required by the app
 
@@ -90,8 +93,7 @@ Airfoil Converter V6.2.py      Main application
 Airfoil Converter V6.2.spec    PyInstaller build specification
 build_v6_2.ps1                 Build helper script
 pyi_tk_runtime.py              Runtime hook for bundled Tcl/Tk
-Airfoil_DATA/                  Airfoil coordinate database
-NACA 4 digit/                  Additional NACA coordinate files
+Airfoil_DATA.zip               Airfoil coordinate database archive
 exports/                       Default source-mode export folder
 dist/                          Built standalone app output
 build/                         PyInstaller temporary build output
