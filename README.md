@@ -1,8 +1,11 @@
 # Airfoil Converter V6.2
 
 A Windows desktop tool for browsing airfoil coordinate files, building wing station layouts, transforming airfoil sections in 3D, running XFOIL polar analysis, and exporting geometry for CAD or simulation workflows.
+<img width="3824" height="1968" alt="image" src="https://github.com/user-attachments/assets/ad349968-df03-4832-9626-ed4a31ad4810" />
 
 The app is built with Python, Tkinter, NumPy, and Matplotlib. It can use XFOIL for polar analysis when the user provides an XFOIL executable. It includes a local airfoil coordinate database and can also download the UIUC airfoil database.
+
+
 
 ## Features
 
