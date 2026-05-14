@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# PyInstaller
+build/
+dist/
+*.spec.bak
+
+# IDE
+.idea/
+.vscode/
+
+# Runtime settings and generated outputs
+gui_settings.json
+favorites.json
+exports/
+
+# Third-party executable: user should download/select XFOIL separately
+xfoil.exe
+
+# Local duplicate/archive folders
+Airfoil_DATA - Copy/
+
+# Large/generated data outputs
+*.log
+*.tmp
